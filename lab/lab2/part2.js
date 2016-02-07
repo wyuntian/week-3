@@ -18,3 +18,8 @@ _.each(myArray, function(value, key, list) {
   console.log(value, key, list);
 });
 ===================== */
+var myArray = [1, 10, 100, 1000];
+
+_.each(myArray, function(value, key, list) {
+  console.log(value, key, list);
+});

@@ -46,9 +46,11 @@ Instructions: "Write a function that returns the value of an object at a specifi
 Example: "valueAtKey({'name': 'Nathan'}, 'name') should return 'Nathan'"
 ===================== */
 
-var valueAtKey = function(list){
-  for (key in list )
-  return key
+var valueAtKey = function(list, x){
+  for (x in list){
+    return list[x]
+
+  }
 
 };
 
@@ -60,7 +62,7 @@ Example: "y(0, 0, 0) should return 0; y(1, 1, 1) should return 2"
 ===================== */
 
 var y = function(m,x,b) {
-  return m+b
+  return m*x+b
 };
 console.log('y success:', y(12, 1, 12) === 24);
 
@@ -69,8 +71,13 @@ Instructions: "Write a function which counts the number of times a value occurs 
 Example: "countItem(['a', 'b', 'a'], 'a') should return 2"
 ===================== */
 
-var countItem = function() {
-
+var countItem = function(list, val) {
+  var count=0
+  for (i=0; i<list.length; i++){
+    if (list[i]===val){
+      count++
+    }
+} return count
 };
 
 console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);
