@@ -1,0 +1,4 @@
+Object{name:"nathan", profession:"model"}
+for(keys in Object){
+console.log(Object[2])
+}
